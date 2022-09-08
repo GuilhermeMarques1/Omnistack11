@@ -1,8 +1,3 @@
-const express = require("express");
-
-const app = express();
-
-app.use(express.json());
 /**
  * MÉTODOS HTTP:
  *
@@ -45,17 +40,13 @@ app.use(express.json());
 //   })
 // });
 
-app.post('/users', (req, res) => {
-  const body = req.body;
+// app.post('/users', (req, res) => {
+//   const body = req.body;
 
-  console.log(body);
+//   console.log(body);
 
-  return res.json({
-    message: "hello World",
-    name: "Guilherme Marques"
-  })
-});
-
-app.listen(3333, () => {
-  console.log("App is listening on port 3333");
-});
+//   return res.json({
+//     message: "hello World",
+//     name: "Guilherme Marques"
+//   })
+// });
